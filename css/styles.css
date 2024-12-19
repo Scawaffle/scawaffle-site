@@ -1,8 +1,12 @@
-/* General and Reset*/
+/* General and Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Set height to 100% for both html and body */
 }
 
 body {
@@ -10,11 +14,11 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Use flexbox for body */
+    flex-direction: column; /* Arrange children in a column */
 }
 
-/*Header & Navigation*/
+/* Header & Navigation */
 header {
     background-color: #aa8585;
     padding: 10px 20px;
@@ -48,10 +52,21 @@ header nav ul li a:hover {
     color: #4caf50;
 }
 
-
-/*Hero Section*/
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #4caf50, );
+    background: linear-gradient(135deg, #4caf50);
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Allow main to grow and take available space */
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1; /* Optional: Add a background color to the footer */
+    padding: 10px; /* Optional: Add some padding */
+    text-align: center; /* Optional: Center the text */
 }
