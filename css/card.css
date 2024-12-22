@@ -18,6 +18,8 @@ body {
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
     color: #dbcece;
+    margin: 0;
+    padding: 0;
     background-color: var(--bg);
     display: flex; /* Use flexbox for body */
     flex-direction: column; /* Arrange children in a column */
@@ -85,6 +87,50 @@ header nav ul li a:hover {
 /* Main Content */
 main {
     flex: 1; /* Allow main to grow and take available space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0 0 15px;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition:background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
 }
 
 /* Footer */
